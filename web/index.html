@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Repositori Hasil Belajar</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="nav-logo">
+                Repositori PPLG
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="hasilbelajar.html">Hasil Belajar</a></li>
+                <li><a href="datasampah.html">Data Sampah</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+
+            <img class="p" src="../aseets/logoPplg2.png" alt="Logo PPLG" width="85">
+
+            <img src="../aseets/wikrama-logo.png" alt="Logo Wikrama" width="101">
+
+            <h1>Web Repositori Hasil Belajar Kelas 10</h1>
+
+            <p>Integrasi Materi Pengolahan Sampah</p>
+
+        </div>
+    </header>
+
+
+    <!-- KONTEN UTAMA -->
+    <main>
+
+        <!-- FORM UPLOAD -->
+        <section class="upload-section">
+
+            <h2>Upload Hasil Belajar</h2>
+
+            <form class="form-group" id="uploadForm">
+
+                <div class="container">
+                    <label for="nama">Nama Murid</label>
+
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Masukkan Nama Lengkap"
+                        required
+                    >
+                </div>
+
+
+                <div class="container">
+                    <label for="kelas">Kelas</label>
+
+                    <input
+                        type="text"
+                        id="kelas"
+                        name="kelas"
+                        placeholder="Contoh: PPLG X-1"
+                        required
+                    >
+                </div>
+
+
+                <div class="container">
+                    <label for="mapel">Mata Pelajaran</label>
+
+                    <select id="mapel" name="mapel" required>
+                        <option value="">Pilih Mata Pelajaran</option>
+                        <option value="PIPAS">PIPAS</option>
+                        <option value="PABP">PABP</option>
+                        <option value="Sejarah">Sejarah</option>
+                        <option value="PP">PP (Pendidikan Pancasila)</option>
+                        <option value="KOKURIKULER">KOKURIKULER</option>
+                        <option value="Lainnya">Mata Pelajaran Lainnya</option>
+                    </select>
+                </div>
+
+
+                <div class="container">
+                    <label for="judul">Judul Tugas</label>
+
+                    <input
+                        type="text"
+                        id="judul"
+                        name="judul"
+                        placeholder="Judul Tugas Terkait Pengelolaan Sampah"
+                        required
+                    >
+                </div>
+
+
+                <div class="container">
+                    <label for="pemahaman">Hasil Pemahaman</label>
+
+                    <textarea
+                        id="pemahaman"
+                        name="pemahaman"
+                        placeholder="Tulis Hasil Pemahamanmu Di Sini..."
+                        required
+                    ></textarea>
+                </div>
+
+
+                <div class="container">
+                    <label for="berkas">Upload Berkas</label>
+
+                    <input
+                        type="file"
+                        id="berkas"
+                        name="berkas"
+                        accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx"
+                        required
+                    >
+                </div>
+
+
+                <button type="submit">Simpan</button>
+
+            </form>
+
+            <div id="daftarHasil"></div>
+
+        </section>
+
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; 2026 Jurusan PPLG - Proyek Kolaborasi
+            Hasil Belajar Pengelolaan Sampah
+        </p>
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
